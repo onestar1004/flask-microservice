@@ -9,5 +9,6 @@ class ContinuousResource(db.Model):
     resource_type = db.Column(db.String(36), primary_key=True) # Launcher/Lander/Multi
     created = db.Column(db.DateTime, nullable=False, default=datetime.datetime.utcnow)
 
+
     # Children
     allocations = db.relationship("ContinuousResourceAllocation", back_populates="resource", lazy=True)
