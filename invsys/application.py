@@ -11,8 +11,8 @@ def create_app(db_uri: str) -> Flask:
     app.config['SQLALCHEMY_DATABASE_URI'] = db_uri
     db.init_app(app)
 
-    with app.app_context():
-        db.create_all()
+    with app.app_context():   
+        db.create_all() 
 
     # Register continuous resource blueprints
     app.register_blueprint(
@@ -23,6 +23,7 @@ def create_app(db_uri: str) -> Flask:
         ),
         url_prefix='/api'
     )
+
 
     app.register_blueprint(
         create_continuous_resource_blueprint(
