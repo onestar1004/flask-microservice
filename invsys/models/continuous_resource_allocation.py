@@ -4,7 +4,6 @@ import datetime
 class ContinuousResourceAllocation(db.Model):
     __tablename__ = "continuous_resource_allocations"
 
-
     # Ids
     id = db.Column(db.String(36), primary_key=True, unique=True)
 
