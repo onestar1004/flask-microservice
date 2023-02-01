@@ -22,6 +22,7 @@ def create_app(db_uri: str) -> Flask:
             resource_prefix="cars"
         ),
         url_prefix='/api'
+
     )
 
     app.register_blueprint(
