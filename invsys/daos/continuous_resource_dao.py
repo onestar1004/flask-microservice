@@ -4,6 +4,7 @@ from models.continuous_resource import ContinuousResource
 from models.continuous_resource_allocation import ContinuousResourceAllocation
 import uuid
 
+
 class ContinuousResourceDao:
     @staticmethod
     def create_resource(resource_type, name) -> ContinuousResource:
