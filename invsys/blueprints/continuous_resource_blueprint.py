@@ -33,7 +33,6 @@ def create_continuous_resource_blueprint(blueprint_name: str, resource_type: str
             for resource in ContinuousResourceDao.get_resources(resource_type=resource_type)
         ]), 200
 
-
     @blueprint.route(f'/{resource_prefix}/<resource_id>', methods=["GET"])
     def get_resource(resource_id):
         """
