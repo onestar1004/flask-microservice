@@ -29,6 +29,7 @@ def create_application() -> Flask:
 
     return app
 
+
 def get_proxy_headers(response) -> List[Tuple]:
 	  # A function to get the needed headers from the requests response
     excluded_headers = ['content-encoding', 'content-length', 'transfer-encoding', 'connection']
