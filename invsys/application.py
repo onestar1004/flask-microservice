@@ -24,7 +24,6 @@ def create_app(db_uri: str) -> Flask:
         url_prefix='/api'
     )
 
-
     app.register_blueprint(
         create_continuous_resource_blueprint(
             blueprint_name="LorrysBlueprint",
