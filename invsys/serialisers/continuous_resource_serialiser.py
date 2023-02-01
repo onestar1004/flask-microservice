@@ -1,4 +1,3 @@
-
 class ContinuousResourceSerialiser:
     @staticmethod
     def serialise(resource) -> dict:
